@@ -4,3 +4,77 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.container {
+	width: 1170px;
+	margin: 20px auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.box {
+	width: calc(100% / 3 - 10px);
+	float: left;
+	margin: 5px;
+	position: relative;
+}
+
+.origin {
+	height: 500px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.img-hover {
+	height: 500px;
+	object-fit: cover;
+	display: none;
+	width: 100%;
+}
+
+.box:hover .origin {
+	display: none;
+}
+
+.box:hover .img-hover {
+	display: inline-block;
+}
+
+.saldi {
+	position: absolute;
+	bottom: 20px;
+	background-color: red;
+	height: 20px;
+	width: 35px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+}
+
+.sostenibilita {
+	position: absolute;
+	bottom: 20px;
+	left: 40px;
+	background-color: green;
+	height: 20px;
+	width: 70px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+}
+
+/* debug */
+/* .container.debug {
+	height: 500px;
+	background-color: white;
+}
+
+.debug .box {
+	height: 500px;
+} */
